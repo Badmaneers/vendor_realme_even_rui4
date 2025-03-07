@@ -1857,7 +1857,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3191/proprietary/vendor/etc/camera/filters_lut/tree-green.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/tree-green.cube.rgb.bin \
     vendor/realme/RMX3191/proprietary/vendor/etc/camera/filters_lut/yuanqi-2.2s.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filters_lut/yuanqi-2.2s.cube.rgb.bin \
     vendor/realme/RMX3191/proprietary/vendor/etc/camera/gasryuv.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/gasryuv.model \
-    vendor/realme/RMX3191/proprietary/vendor/etc/camera/license.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/license.lic \
     vendor/realme/RMX3191/proprietary/vendor/etc/camera/merged_model_post:$(TARGET_COPY_OUT_VENDOR)/etc/camera/merged_model_post \
     vendor/realme/RMX3191/proprietary/vendor/etc/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
     vendor/realme/RMX3191/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
