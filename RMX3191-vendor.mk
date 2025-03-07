@@ -2248,9 +2248,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3191/proprietary/vendor/res/images/lcd_test_01.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_01.png \
     vendor/realme/RMX3191/proprietary/vendor/res/images/lcd_test_02.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_02.png \
     vendor/realme/RMX3191/proprietary/vendor/res/sound/ringtone.wav:$(TARGET_COPY_OUT_VENDOR)/res/sound/ringtone.wav \
-    vendor/realme/RMX3191/proprietary/vendor/res/sound/testpattern1.wav:$(TARGET_COPY_OUT_VENDOR)/res/sound/testpattern1.wav \
-    vendor/realme/RMX3191/proprietary/vendor/ro.prop:$(TARGET_COPY_OUT_VENDOR)/ro.prop \
-    vendor/realme/RMX3191/proprietary/vendor/rw.prop:$(TARGET_COPY_OUT_VENDOR)/rw.prop
+    vendor/realme/RMX3191/proprietary/vendor/res/sound/testpattern1.wav:$(TARGET_COPY_OUT_VENDOR)/res/sound/testpattern1.wav 
+
 
 PRODUCT_PACKAGES += \
     libdatasource \
