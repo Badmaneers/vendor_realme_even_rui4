@@ -8,12 +8,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/realme/RMX3191/proprietary/etc/audio_effects.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_effects.conf \
     vendor/realme/RMX3191/proprietary/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_SYSTEM)/etc/seccomp_policy/mediacodec.policy \
-    vendor/realme/RMX3191/proprietary/odm/etc/20761/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/20761/build.default.prop \
-    vendor/realme/RMX3191/proprietary/odm/etc/20761/build.eea.prop:$(TARGET_COPY_OUT_ODM)/etc/20761/build.eea.prop \
-    vendor/realme/RMX3191/proprietary/odm/etc/20761/build.ru.prop:$(TARGET_COPY_OUT_ODM)/etc/20761/build.ru.prop \
-    vendor/realme/RMX3191/proprietary/odm/etc/20761/build.t2.prop:$(TARGET_COPY_OUT_ODM)/etc/20761/build.t2.prop \
-    vendor/realme/RMX3191/proprietary/odm/etc/20761/build.tr.prop:$(TARGET_COPY_OUT_ODM)/etc/20761/build.tr.prop \
-    vendor/realme/RMX3191/proprietary/odm/etc/20761/flags.prop:$(TARGET_COPY_OUT_ODM)/etc/20761/flags.prop \
     vendor/realme/RMX3191/proprietary/odm/etc/DownloadModeKey/MT6877_C:$(TARGET_COPY_OUT_ODM)/etc/DownloadModeKey/MT6877_C \
     vendor/realme/RMX3191/proprietary/odm/etc/Multimedia_Daemon_List.xml:$(TARGET_COPY_OUT_ODM)/etc/Multimedia_Daemon_List.xml \
     vendor/realme/RMX3191/proprietary/odm/etc/ThermalServiceConfig/sys_thermal_config.xml:$(TARGET_COPY_OUT_ODM)/etc/ThermalServiceConfig/sys_thermal_config.xml \
@@ -144,7 +138,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3191/proprietary/odm/etc/dirac/diracmobile.config:$(TARGET_COPY_OUT_ODM)/etc/dirac/diracmobile.config \
     vendor/realme/RMX3191/proprietary/odm/etc/dirac/diracvdd.bin:$(TARGET_COPY_OUT_ODM)/etc/dirac/diracvdd.bin \
     vendor/realme/RMX3191/proprietary/odm/etc/ecc_list.xml:$(TARGET_COPY_OUT_ODM)/etc/ecc_list.xml \
-    vendor/realme/RMX3191/proprietary/odm/etc/flags.prop:$(TARGET_COPY_OUT_ODM)/etc/flags.prop \
     vendor/realme/RMX3191/proprietary/odm/etc/hlt_ilitek_ili7807s_eyeprotect_data.xml:$(TARGET_COPY_OUT_ODM)/etc/hlt_ilitek_ili7807s_eyeprotect_data.xml \
     vendor/realme/RMX3191/proprietary/odm/etc/hlt_novtek_ac_nt36525b_eyeprotect_data.xml:$(TARGET_COPY_OUT_ODM)/etc/hlt_novtek_ac_nt36525b_eyeprotect_data.xml \
     vendor/realme/RMX3191/proprietary/odm/etc/init/camerasloganserver.rc:$(TARGET_COPY_OUT_ODM)/etc/init/camerasloganserver.rc \
@@ -177,7 +170,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3191/proprietary/odm/etc/init/vibrator-default.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vibrator-default.rc \
     vendor/realme/RMX3191/proprietary/odm/etc/media_codecs_ffmpeg.xml:$(TARGET_COPY_OUT_ODM)/etc/media_codecs_ffmpeg.xml \
     vendor/realme/RMX3191/proprietary/odm/etc/media_codecs_vendor_oplus.xml:$(TARGET_COPY_OUT_ODM)/etc/media_codecs_vendor_oplus.xml \
-    vendor/realme/RMX3191/proprietary/odm/etc/normalize/flags.prop:$(TARGET_COPY_OUT_ODM)/etc/normalize/flags.prop \
     vendor/realme/RMX3191/proprietary/odm/etc/nxp/CMCC/Phone_bt_bt.bin:$(TARGET_COPY_OUT_ODM)/etc/nxp/CMCC/Phone_bt_bt.bin \
     vendor/realme/RMX3191/proprietary/odm/etc/nxp/CMCC/Phone_hsmic_hs.bin:$(TARGET_COPY_OUT_ODM)/etc/nxp/CMCC/Phone_hsmic_hs.bin \
     vendor/realme/RMX3191/proprietary/odm/etc/nxp/CMCC/Phone_mic_hp.bin:$(TARGET_COPY_OUT_ODM)/etc/nxp/CMCC/Phone_mic_hp.bin \
