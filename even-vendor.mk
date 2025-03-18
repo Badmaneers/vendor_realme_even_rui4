@@ -3240,13 +3240,3 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.wifi@1.1-service \
     iwpriv_vendor \
     mtkftm
-
-PRODUCT_PACKAGES += \
-    ImsService \
-    mediatek-common \
-    mediatek-framework \
-    mediatek-ims-base \
-    mediatek-ims-common \
-    mediatek-telecom-common \
-    mediatek-telephony-base \
-    mediatek-telephony-common \
