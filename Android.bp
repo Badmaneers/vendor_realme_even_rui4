@@ -12,6 +12,18 @@ dex_import {
 }
 
 dex_import {
+	name: "mediatek-gwsd",
+	owner: "realme",
+	jars: ["proprietary/system/framework/mediatek-gwsd.jar"],
+}
+
+dex_import {
+	name: "mediatek-gwsdv2",
+	owner: "realme",
+	jars: ["proprietary/system/framework/mediatek-gwsdv2.jar"],
+}
+
+dex_import {
 	name: "mediatek-framework",
 	owner: "realme",
 	jars: ["proprietary/system/framework/mediatek-framework.jar"],
