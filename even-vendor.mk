@@ -5,6 +5,21 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/realme/even
 
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.6-impl-mediatek \
+    vendor.mediatek.hardware.power@1.1 \
+    vendor.mediatek.hardware.power@2.0 \
+    android.hardware.neuralnetworks@1.3-service-mtk-gpu.xml \
+    android.hardware.usb@1.2-service-mediatekv2.xml \
+    lbs_hidl_service@1.0.xml \
+    manifest_android.hardware.drm@1.4-service.widevine.xml \
+    manifest_hwcomposer.xml \
+    manifest_media_c2_V1_1_default.xml \
+    manifest_oplusSensor.xml \
+    manifest_oplus_charger.xml \
+    manifest_oplus_fingerprint.xml \
+    ormsHalService-default.xml
+
 PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/bin/kpoc_charger:$(TARGET_COPY_OUT_SYSTEM)/bin/kpoc_charger \
     vendor/realme/even/proprietary/bin/vtservice:$(TARGET_COPY_OUT_SYSTEM)/bin/vtservice \
@@ -86,12 +101,13 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/bin/chipinfo:$(TARGET_COPY_OUT_VENDOR)/bin/chipinfo \
     vendor/realme/even/proprietary/vendor/bin/dmc_core:$(TARGET_COPY_OUT_VENDOR)/bin/dmc_core \
     vendor/realme/even/proprietary/vendor/bin/doeapp-sat:$(TARGET_COPY_OUT_VENDOR)/bin/doeapp-sat \
-    vendor/realme/even/proprietary/vendor/bin/dtc_vendor:$(TARGET_COPY_OUT_VENDOR)/bin/dtc_vendor \
+    vendor/realme/even/proprietary/vendor/bin/dtc_VENDOR:$(TARGET_COPY_OUT_VENDOR)/bin/dtc_VENDOR \
     vendor/realme/even/proprietary/vendor/bin/epdg_wod:$(TARGET_COPY_OUT_VENDOR)/bin/epdg_wod \
     vendor/realme/even/proprietary/vendor/bin/factory:$(TARGET_COPY_OUT_VENDOR)/bin/factory \
     vendor/realme/even/proprietary/vendor/bin/fuelgauged:$(TARGET_COPY_OUT_VENDOR)/bin/fuelgauged \
     vendor/realme/even/proprietary/vendor/bin/fuelgauged_nvram:$(TARGET_COPY_OUT_VENDOR)/bin/fuelgauged_nvram \
     vendor/realme/even/proprietary/vendor/bin/gsm0710muxd:$(TARGET_COPY_OUT_VENDOR)/bin/gsm0710muxd \
+    vendor/realme/even/proprietary/vendor/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service \
     vendor/realme/even/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.1-service-mediatek \
     vendor/realme/even/proprietary/vendor/bin/hw/android.hardware.drm@1.4-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.4-service.widevine \
     vendor/realme/even/proprietary/vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek \
@@ -300,6 +316,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml \
     vendor/realme/even/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
     vendor/realme/even/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Vodafone.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Vodafone.xml \
+    vendor/realme/even/proprietary/vendor/init.oplus.fingerprints.rc:$(TARGET_COPY_OUT_VE   NDOR)/init.oplus.fingerprints.rc \
+    vendor/realme/even/proprietary/vendor/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/realme/even/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc \
     vendor/realme/even/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/realme/even/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
@@ -486,7 +504,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/lib/libaedv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaedv.so \
     vendor/realme/even/proprietary/vendor/lib/libakm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libakm.so \
     vendor/realme/even/proprietary/vendor/lib/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalsautils.so \
-    vendor/realme/even/proprietary/vendor/lib/libapmonitor_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libapmonitor_vendor.so \
+    vendor/realme/even/proprietary/vendor/lib/libapmonitor_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libapmonitor_VENDOR.so \
     vendor/realme/even/proprietary/vendor/lib/libappgamepq.so:$(TARGET_COPY_OUT_VENDOR)/lib/libappgamepq.so \
     vendor/realme/even/proprietary/vendor/lib/libapu_mdw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libapu_mdw.so \
     vendor/realme/even/proprietary/vendor/lib/libapusys.so:$(TARGET_COPY_OUT_VENDOR)/lib/libapusys.so \
@@ -495,18 +513,18 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/lib/libarmnn_ndk.mtk.vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarmnn_ndk.mtk.vndk.so \
     vendor/realme/even/proprietary/vendor/lib/libaudio_engineer_test.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_engineer_test.so \
     vendor/realme/even/proprietary/vendor/lib/libaudio_param_parser-vnd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_param_parser-vnd.so \
-    vendor/realme/even/proprietary/vendor/lib/libaudiocompensationfilter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocompensationfilter_vendor.so \
+    vendor/realme/even/proprietary/vendor/lib/libaudiocompensationfilter_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocompensationfilter_VENDOR.so \
     vendor/realme/even/proprietary/vendor/lib/libaudiocompensationfilterc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocompensationfilterc.so \
-    vendor/realme/even/proprietary/vendor/lib/libaudiocomponentengine_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocomponentengine_vendor.so \
+    vendor/realme/even/proprietary/vendor/lib/libaudiocomponentengine_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocomponentengine_VENDOR.so \
     vendor/realme/even/proprietary/vendor/lib/libaudiocomponentenginec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocomponentenginec.so \
-    vendor/realme/even/proprietary/vendor/lib/libaudiodcrflt_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiodcrflt_vendor.so \
+    vendor/realme/even/proprietary/vendor/lib/libaudiodcrflt_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiodcrflt_VENDOR.so \
     vendor/realme/even/proprietary/vendor/lib/libaudiofmtconv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiofmtconv.so \
     vendor/realme/even/proprietary/vendor/lib/libaudioloudc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioloudc.so \
     vendor/realme/even/proprietary/vendor/lib/libaudioprimarydevicehalifclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioprimarydevicehalifclient.so \
-    vendor/realme/even/proprietary/vendor/lib/libaudiotoolkit_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiotoolkit_vendor.so \
+    vendor/realme/even/proprietary/vendor/lib/libaudiotoolkit_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiotoolkit_VENDOR.so \
     vendor/realme/even/proprietary/vendor/lib/libaurisysdemo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaurisysdemo.so \
-    vendor/realme/even/proprietary/vendor/lib/libbessound_hd_mtk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbessound_hd_mtk_vendor.so \
-    vendor/realme/even/proprietary/vendor/lib/libblisrc32_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libblisrc32_vendor.so \
+    vendor/realme/even/proprietary/vendor/lib/libbessound_hd_mtk_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbessound_hd_mtk_VENDOR.so \
+    vendor/realme/even/proprietary/vendor/lib/libblisrc32_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libblisrc32_VENDOR.so \
     vendor/realme/even/proprietary/vendor/lib/libbluetooth_audio_session_mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_mediatek.so \
     vendor/realme/even/proprietary/vendor/lib/libbwc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbwc.so \
     vendor/realme/even/proprietary/vendor/lib/libcam.halsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.halsensor.so \
@@ -564,8 +582,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/lib/libion_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libion_mtk.so \
     vendor/realme/even/proprietary/vendor/lib/libion_ulit.so:$(TARGET_COPY_OUT_VENDOR)/lib/libion_ulit.so \
     vendor/realme/even/proprietary/vendor/lib/libipsec_ims_shr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libipsec_ims_shr.so \
-    vendor/realme/even/proprietary/vendor/lib/libjpeg-alpha-oal_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpeg-alpha-oal_vendor.so \
-    vendor/realme/even/proprietary/vendor/lib/libjpeg-alpha_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpeg-alpha_vendor.so \
+    vendor/realme/even/proprietary/vendor/lib/libjpeg-alpha-oal_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpeg-alpha-oal_VENDOR.so \
+    vendor/realme/even/proprietary/vendor/lib/libjpeg-alpha_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpeg-alpha_VENDOR.so \
     vendor/realme/even/proprietary/vendor/lib/libktvdrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libktvdrc.so \
     vendor/realme/even/proprietary/vendor/lib/libktveffect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libktveffect.so \
     vendor/realme/even/proprietary/vendor/lib/libktveffect_rec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libktveffect_rec.so \
@@ -589,11 +607,11 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/lib/libmtkares.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkares.so \
     vendor/realme/even/proprietary/vendor/lib/libmtkcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcutils.so \
     vendor/realme/even/proprietary/vendor/lib/libmtkhardware_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkhardware_legacy.so \
-    vendor/realme/even/proprietary/vendor/lib/libmtklimiter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtklimiter_vendor.so \
+    vendor/realme/even/proprietary/vendor/lib/libmtklimiter_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtklimiter_VENDOR.so \
     vendor/realme/even/proprietary/vendor/lib/libmtknetutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtknetutils.so \
     vendor/realme/even/proprietary/vendor/lib/libmtkproperty.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkproperty.so \
     vendor/realme/even/proprietary/vendor/lib/libmtkrillog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkrillog.so \
-    vendor/realme/even/proprietary/vendor/lib/libmtkshifter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkshifter_vendor.so \
+    vendor/realme/even/proprietary/vendor/lib/libmtkshifter_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkshifter_VENDOR.so \
     vendor/realme/even/proprietary/vendor/lib/libmtkspparser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkspparser.so \
     vendor/realme/even/proprietary/vendor/lib/libmtksysutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtksysutils.so \
     vendor/realme/even/proprietary/vendor/lib/libneuroeara.so:$(TARGET_COPY_OUT_VENDOR)/lib/libneuroeara.so \
@@ -616,7 +634,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/lib/libsimlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsimlock.so \
     vendor/realme/even/proprietary/vendor/lib/libsimmelock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsimmelock.so \
     vendor/realme/even/proprietary/vendor/lib/libspeech_enh_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeech_enh_lib.so \
-    vendor/realme/even/proprietary/vendor/lib/libspeechparser_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeechparser_vendor.so \
+    vendor/realme/even/proprietary/vendor/lib/libspeechparser_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeechparser_VENDOR.so \
     vendor/realme/even/proprietary/vendor/lib/libssl-ss.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssl-ss.so \
     vendor/realme/even/proprietary/vendor/lib/libstrongswan.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstrongswan.so \
     vendor/realme/even/proprietary/vendor/lib/libsysenv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysenv.so \
@@ -700,6 +718,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.9.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.9.so \
     vendor/realme/even/proprietary/vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.videotelephony@1.0.so \
     vendor/realme/even/proprietary/vendor/lib/vendor.oplus.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oplus.hardware.commondcs@1.0.so \
+    vendor/realme/even/proprietary/vendor/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so \
     vendor/realme/even/proprietary/vendor/lib64/AVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/AVCSecureVdecCA.so \
     vendor/realme/even/proprietary/vendor/lib64/AVCSecureVencCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/AVCSecureVencCA.so \
     vendor/realme/even/proprietary/vendor/lib64/VP9SecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/VP9SecureVdecCA.so \
@@ -732,7 +751,16 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/lib64/evenc_shinetech_depth_gc02m1b_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/evenc_shinetech_depth_gc02m1b_IdxMgr.so \
     vendor/realme/even/proprietary/vendor/lib64/evenc_shinetech_depth_gc02m1b_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/evenc_shinetech_depth_gc02m1b_tuning.so \
     vendor/realme/even/proprietary/vendor/lib64/framework-permission-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/framework-permission-aidl-cpp.so \
-    vendor/realme/even/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so \
+    vendor/realme/even/proprietary/vendor/lib64/hw/fingerprint.focaltech.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.focaltech.default.so \
+    vendor/realme/even/proprietary/vendor/lib64/hw/fingerprint.goodix_G2.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix_G2.default.so \
+    vendor/realme/even/proprietary/vendor/lib64/hw/fingerprint.goodix_G3.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix_G3.default.so \
+    vendor/realme/even/proprietary/vendor/lib64/hw/fingerprint.goodix_G5.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix_G5.default.so \
+    vendor/realme/even/proprietary/vendor/lib64/hw/fingerprint.goodix_G6.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix_G6.default.so \
+    vendor/realme/even/proprietary/vendor/lib64/hw/fingerprint.goodix_G7.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix_G7.default.so \
+    vendor/realme/even/proprietary/vendor/lib64/hw/fingerprint.goodix_G7.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix_G7.default.so \
+    vendor/realme/even/proprietary/vendor/lib64/hw/fingerprint.silead.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.silead.default.so \
+    vendor/realme/even/proprietary/vendor/lib64/hw/fpsensor_fingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fpsensor_fingerprint.default.so \
+    vendor/realme/even/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so:$(TARGET_COPY_OUTVENDOR)/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so \
     vendor/realme/even/proprietary/vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so \
     vendor/realme/even/proprietary/vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
     vendor/realme/even/proprietary/vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
@@ -804,7 +832,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/lib64/libaedv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaedv.so \
     vendor/realme/even/proprietary/vendor/lib64/libakm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libakm.so \
     vendor/realme/even/proprietary/vendor/lib64/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalsautils.so \
-    vendor/realme/even/proprietary/vendor/lib64/libapmonitor_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapmonitor_vendor.so \
+    vendor/realme/even/proprietary/vendor/lib64/libapmonitor_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapmonitor_VENDOR.so \
     vendor/realme/even/proprietary/vendor/lib64/libappgamepq.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libappgamepq.so \
     vendor/realme/even/proprietary/vendor/lib64/libapu_mdw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapu_mdw.so \
     vendor/realme/even/proprietary/vendor/lib64/libapusys.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapusys.so \
@@ -815,19 +843,19 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/lib64/libasn1c_mdmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1c_mdmi.so \
     vendor/realme/even/proprietary/vendor/lib64/libaudio_engineer_test.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_engineer_test.so \
     vendor/realme/even/proprietary/vendor/lib64/libaudio_param_parser-vnd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_param_parser-vnd.so \
-    vendor/realme/even/proprietary/vendor/lib64/libaudiocompensationfilter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocompensationfilter_vendor.so \
+    vendor/realme/even/proprietary/vendor/lib64/libaudiocompensationfilter_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocompensationfilter_VENDOR.so \
     vendor/realme/even/proprietary/vendor/lib64/libaudiocompensationfilterc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocompensationfilterc.so \
-    vendor/realme/even/proprietary/vendor/lib64/libaudiocomponentengine_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocomponentengine_vendor.so \
+    vendor/realme/even/proprietary/vendor/lib64/libaudiocomponentengine_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocomponentengine_VENDOR.so \
     vendor/realme/even/proprietary/vendor/lib64/libaudiocomponentenginec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocomponentenginec.so \
-    vendor/realme/even/proprietary/vendor/lib64/libaudiocustparam_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocustparam_vendor.so \
-    vendor/realme/even/proprietary/vendor/lib64/libaudiodcrflt_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiodcrflt_vendor.so \
+    vendor/realme/even/proprietary/vendor/lib64/libaudiocustparam_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocustparam_VENDOR.so \
+    vendor/realme/even/proprietary/vendor/lib64/libaudiodcrflt_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiodcrflt_VENDOR.so \
     vendor/realme/even/proprietary/vendor/lib64/libaudiofmtconv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiofmtconv.so \
     vendor/realme/even/proprietary/vendor/lib64/libaudioloudc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioloudc.so \
     vendor/realme/even/proprietary/vendor/lib64/libaudioprimarydevicehalifclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioprimarydevicehalifclient.so \
-    vendor/realme/even/proprietary/vendor/lib64/libaudiotoolkit_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiotoolkit_vendor.so \
+    vendor/realme/even/proprietary/vendor/lib64/libaudiotoolkit_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiotoolkit_VENDOR.so \
     vendor/realme/even/proprietary/vendor/lib64/libaurisysdemo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaurisysdemo.so \
-    vendor/realme/even/proprietary/vendor/lib64/libbessound_hd_mtk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbessound_hd_mtk_vendor.so \
-    vendor/realme/even/proprietary/vendor/lib64/libblisrc32_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libblisrc32_vendor.so \
+    vendor/realme/even/proprietary/vendor/lib64/libbessound_hd_mtk_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbessound_hd_mtk_VENDOR.so \
+    vendor/realme/even/proprietary/vendor/lib64/libblisrc32_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libblisrc32_VENDOR.so \
     vendor/realme/even/proprietary/vendor/lib64/libbluetooth_audio_session_mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_mediatek.so \
     vendor/realme/even/proprietary/vendor/lib64/libbluetooth_hw_test.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_hw_test.so \
     vendor/realme/even/proprietary/vendor/lib64/libbluetooth_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_mtk.so \
@@ -874,7 +902,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/lib64/libcamdrv_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamdrv_isp.so \
     vendor/realme/even/proprietary/vendor/lib64/libcamdrv_tuning_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamdrv_tuning_mgr.so \
     vendor/realme/even/proprietary/vendor/lib64/libcamdrv_twin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamdrv_twin.so \
-    vendor/realme/even/proprietary/vendor/lib64/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera2ndk_vendor.so \
+    vendor/realme/even/proprietary/vendor/lib64/libcamera2ndk_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera2ndk_VENDOR.so \
     vendor/realme/even/proprietary/vendor/lib64/libcamera_core_hwi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_core_hwi.so \
     vendor/realme/even/proprietary/vendor/lib64/libcameracustom.eis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.eis.so \
     vendor/realme/even/proprietary/vendor/lib64/libcameracustom.plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.plugin.so \
@@ -914,7 +942,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/lib64/libfeature_lmv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature_lmv.so \
     vendor/realme/even/proprietary/vendor/lib64/libfeature_rss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature_rss.so \
     vendor/realme/even/proprietary/vendor/lib64/libfeatureiodrv_mem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeatureiodrv_mem.so \
-    vendor/realme/even/proprietary/vendor/lib64/libfft_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfft_vendor.so \
+    vendor/realme/even/proprietary/vendor/lib64/libfft_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfft_VENDOR.so \
     vendor/realme/even/proprietary/vendor/lib64/libfile_op.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfile_op.so \
     vendor/realme/even/proprietary/vendor/lib64/libgamehdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgamehdr.so \
     vendor/realme/even/proprietary/vendor/lib64/libged.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libged.so \
@@ -940,8 +968,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/lib64/libion_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libion_mtk.so \
     vendor/realme/even/proprietary/vendor/lib64/libion_ulit.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libion_ulit.so \
     vendor/realme/even/proprietary/vendor/lib64/libipsec_ims_shr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipsec_ims_shr.so \
-    vendor/realme/even/proprietary/vendor/lib64/libjpeg-alpha-oal_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha-oal_vendor.so \
-    vendor/realme/even/proprietary/vendor/lib64/libjpeg-alpha_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha_vendor.so \
+    vendor/realme/even/proprietary/vendor/lib64/libjpeg-alpha-oal_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha-oal_VENDOR.so \
+    vendor/realme/even/proprietary/vendor/lib64/libjpeg-alpha_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha_VENDOR.so \
     vendor/realme/even/proprietary/vendor/lib64/libkeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster4.so \
     vendor/realme/even/proprietary/vendor/lib64/libkeymaster41.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster41.so \
     vendor/realme/even/proprietary/vendor/lib64/libkeymaster4_1support.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster4_1support.so \
@@ -1045,15 +1073,15 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/lib64/libmtkcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcutils.so \
     vendor/realme/even/proprietary/vendor/lib64/libmtkhardware_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkhardware_legacy.so \
     vendor/realme/even/proprietary/vendor/lib64/libmtkisp_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkisp_metadata.so \
-    vendor/realme/even/proprietary/vendor/lib64/libmtklimiter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtklimiter_vendor.so \
+    vendor/realme/even/proprietary/vendor/lib64/libmtklimiter_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtklimiter_VENDOR.so \
     vendor/realme/even/proprietary/vendor/lib64/libmtkmipc-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkmipc-ril.so \
     vendor/realme/even/proprietary/vendor/lib64/libmtknetcap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtknetcap.so \
     vendor/realme/even/proprietary/vendor/lib64/libmtknetutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtknetutils.so \
-    vendor/realme/even/proprietary/vendor/lib64/libmtkperf_client_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkperf_client_vendor.so \
+    vendor/realme/even/proprietary/vendor/lib64/libmtkperf_client_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkperf_client_VENDOR.so \
     vendor/realme/even/proprietary/vendor/lib64/libmtkproperty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkproperty.so \
     vendor/realme/even/proprietary/vendor/lib64/libmtkrillog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkrillog.so \
     vendor/realme/even/proprietary/vendor/lib64/libmtkrilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkrilutils.so \
-    vendor/realme/even/proprietary/vendor/lib64/libmtkshifter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkshifter_vendor.so \
+    vendor/realme/even/proprietary/vendor/lib64/libmtkshifter_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkshifter_VENDOR.so \
     vendor/realme/even/proprietary/vendor/lib64/libmtkspparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkspparser.so \
     vendor/realme/even/proprietary/vendor/lib64/libmtksysutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtksysutils.so \
     vendor/realme/even/proprietary/vendor/lib64/libmtktinyxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtktinyxml.so \
@@ -1090,7 +1118,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/lib64/libsimlock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsimlock.so \
     vendor/realme/even/proprietary/vendor/lib64/libsimmelock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsimmelock.so \
     vendor/realme/even/proprietary/vendor/lib64/libspeech_enh_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspeech_enh_lib.so \
-    vendor/realme/even/proprietary/vendor/lib64/libspeechparser_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspeechparser_vendor.so \
+    vendor/realme/even/proprietary/vendor/lib64/libspeechparser_VENDOR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspeechparser_VENDOR.so \
     vendor/realme/even/proprietary/vendor/lib64/libssl-ss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssl-ss.so \
     vendor/realme/even/proprietary/vendor/lib64/libstereoinfoaccessor_vsdof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstereoinfoaccessor_vsdof.so \
     vendor/realme/even/proprietary/vendor/lib64/libstorage_otp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstorage_otp.so \
