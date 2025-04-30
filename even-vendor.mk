@@ -718,6 +718,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.9.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.9.so \
     vendor/realme/even/proprietary/vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.videotelephony@1.0.so \
     vendor/realme/even/proprietary/vendor/lib/vendor.oplus.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oplus.hardware.commondcs@1.0.so \
+    vendor/realme/even/proprietary/vendor/lib/vendor.oplus.hardware.oplusSensor@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oplus.hardware.oplusSensor@1.0.so \
+    vendor/realme/even/proprietary/vendor/lib64/vendor.oplus.hardware.oplusSensor@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.oplusSensor@1.0.so \
     vendor/realme/even/proprietary/vendor/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so \
     vendor/realme/even/proprietary/vendor/lib64/AVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/AVCSecureVdecCA.so \
     vendor/realme/even/proprietary/vendor/lib64/AVCSecureVencCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/AVCSecureVencCA.so \
