@@ -107,7 +107,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/bin/fuelgauged:$(TARGET_COPY_OUT_VENDOR)/bin/fuelgauged \
     vendor/realme/even/proprietary/vendor/bin/fuelgauged_nvram:$(TARGET_COPY_OUT_VENDOR)/bin/fuelgauged_nvram \
     vendor/realme/even/proprietary/vendor/bin/gsm0710muxd:$(TARGET_COPY_OUT_VENDOR)/bin/gsm0710muxd \
-    vendor/realme/spaced/proprietary/odm/bin/hw/vendor.oplus.hardware.charger@1.0-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.charger@1.0-service \
+    vendor/realme/even/proprietary/vendor/bin/hw/vendor.oplus.hardware.charger@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oplus.hardware.charger@1.0-service \
     vendor/realme/even/proprietary/vendor/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service \
     vendor/realme/even/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.1-service-mediatek \
     vendor/realme/even/proprietary/vendor/bin/hw/android.hardware.drm@1.4-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.4-service.widevine \
@@ -318,8 +318,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
     vendor/realme/even/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Vodafone.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Vodafone.xml \
     vendor/realme/even/proprietary/vendor/init.oplus.fingerprints.rc:$(TARGET_COPY_OUT_VENDOR)/init.oplus.fingerprints.rc \
-    vendor/realme/spaced/proprietary/odm/etc/init/vendor.oplus.hardware.charger@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.charger@1.0-service.rc \
-    vendor/realme/spaced/proprietary/odm/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc \
+    vendor/realme/even/proprietary/vendor/etc/init/vendor.oplus.hardware.charger@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oplus.hardware.charger@1.0-service.rc \
+    vendor/realme/even/proprietary/vendor/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc \
     vendor/realme/even/proprietary/vendor/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/realme/even/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc \
     vendor/realme/even/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
@@ -434,11 +434,11 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/firmware/soc1_0_ram_bt_1a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_bt_1a_1_hdr.bin \
     vendor/realme/even/proprietary/vendor/firmware/soc1_0_ram_mcu_1a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_mcu_1a_1_hdr.bin \
     vendor/realme/even/proprietary/vendor/firmware/soc1_0_ram_wifi_1a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_wifi_1a_1_hdr.bin \
-    vendor/realme/spaced/proprietary/odm/lib/vendor.oplus.hardware.charger@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.charger@1.0.so \
-    vendor/realme/spaced/proprietary/odm/lib/libormshalclient.so:$(TARGET_COPY_OUT_ODM)/lib/libormshalclient.so \
-    vendor/realme/spaced/proprietary/odm/lib/vendor.oplus.hardware.orms.ormsHalService@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.orms.ormsHalService@1.0.so \
-    vendor/realme/spaced/proprietary/odm/lib/vendor.oplus.hardware.orms@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.orms@1.0.so \
-    vendor/realme/spaced/proprietary/odm/lib/vendor.oplus.hardware.ormsHalService-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.ormsHalService-V1-ndk_platform.so \
+    vendor/realme/even/proprietary/vendor/lib/vendor.oplus.hardware.charger@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oplus.hardware.charger@1.0.so \
+    vendor/realme/even/proprietary/vendor/lib/libormshalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libormshalclient.so \
+    vendor/realme/even/proprietary/vendor/lib/vendor.oplus.hardware.orms.ormsHalService@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oplus.hardware.orms.ormsHalService@1.0.so \
+    vendor/realme/even/proprietary/vendor/lib/vendor.oplus.hardware.orms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oplus.hardware.orms@1.0.so \
+    vendor/realme/even/proprietary/vendor/lib/vendor.oplus.hardware.ormsHalService-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oplus.hardware.ormsHalService-V1-ndk_platform.so \
     vendor/realme/even/proprietary/vendor/lib/AVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/AVCSecureVdecCA.so \
     vendor/realme/even/proprietary/vendor/lib/AVCSecureVencCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/AVCSecureVencCA.so \
     vendor/realme/even/proprietary/vendor/lib/VP9SecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/VP9SecureVdecCA.so \
@@ -727,16 +727,16 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.videotelephony@1.0.so \
     vendor/realme/even/proprietary/vendor/lib/vendor.oplus.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oplus.hardware.commondcs@1.0.so \
     vendor/realme/even/proprietary/vendor/lib/vendor.oplus.hardware.oplusSensor@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oplus.hardware.oplusSensor@1.0.so \
-    vendor/realme/spaced/proprietary/odm/lib/vendor.oplus.hardware.osense.client-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.osense.client-V1-ndk_platform.so \
-    vendor/realme/spaced/proprietary/odm/lib/vendor.oplus.hardware.osense.client@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.osense.client@1.0.so \
-    vendor/realme/spaced/proprietary/odm/lib/libosenseaidlhalclient.so:$(TARGET_COPY_OUT_ODM)/lib/libosenseaidlhalclient.so \
-    vendor/realme/spaced/proprietary/odm/lib/libosensehalclient.so:$(TARGET_COPY_OUT_ODM)/lib/libosensehalclient.so \
-    vendor/realme/spaced/proprietary/odm/lib64/libosenseaidlhalclient.so:$(TARGET_COPY_OUT_ODM)/lib64/libosenseaidlhalclient.so \
-    vendor/realme/spaced/proprietary/odm/lib64/libosensehalclient.so:$(TARGET_COPY_OUT_ODM)/lib64/libosensehalclient.so \
-    vendor/realme/spaced/proprietary/odm/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so \
-    vendor/realme/spaced/proprietary/odm/lib64/vendor.oplus.hardware.osense.client@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.osense.client@1.0.so \
-    vendor/realme/spaced/proprietary/odm/lib64/libormshalclient.so:$(TARGET_COPY_OUT_ODM)/lib64/libormshalclient.so \
-    vendor/realme/spaced/proprietary/odm/lib64/vendor.oplus.hardware.charger@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.charger@1.0.so \
+    vendor/realme/even/proprietary/vendor/lib/vendor.oplus.hardware.osense.client-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oplus.hardware.osense.client-V1-ndk_platform.so \
+    vendor/realme/even/proprietary/vendor/lib/vendor.oplus.hardware.osense.client@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oplus.hardware.osense.client@1.0.so \
+    vendor/realme/even/proprietary/vendor/lib/libosenseaidlhalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libosenseaidlhalclient.so \
+    vendor/realme/even/proprietary/vendor/lib/libosensehalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libosensehalclient.so \
+    vendor/realme/even/proprietary/vendor/lib64/libosenseaidlhalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libosenseaidlhalclient.so \
+    vendor/realme/even/proprietary/vendor/lib64/libosensehalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libosensehalclient.so \
+    vendor/realme/even/proprietary/vendor/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so \
+    vendor/realme/even/proprietary/vendor/lib64/vendor.oplus.hardware.osense.client@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.osense.client@1.0.so \
+    vendor/realme/even/proprietary/vendor/lib64/libormshalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libormshalclient.so \
+    vendor/realme/even/proprietary/vendor/lib64/vendor.oplus.hardware.charger@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.charger@1.0.so \
     vendor/realme/even/proprietary/vendor/lib64/vendor.oplus.hardware.oplusSensor@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.oplusSensor@1.0.so \
     vendor/realme/even/proprietary/vendor/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so \
     vendor/realme/even/proprietary/vendor/lib64/AVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/AVCSecureVdecCA.so \
