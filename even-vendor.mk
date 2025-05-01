@@ -599,7 +599,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/lib/libktvsoundtouch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libktvsoundtouch.so \
     vendor/realme/even/proprietary/vendor/lib/libktvvolume.so:$(TARGET_COPY_OUT_VENDOR)/lib/libktvvolume.so \
     vendor/realme/even/proprietary/vendor/lib/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libladder.so \
-    vendor/realme/even/vendor/realme/even/proprietary/vendor/lib/liblpcnr.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblpcnr.so \
+    vendor/realme/even/proprietary/vendor/lib/liblpcnr.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblpcnr.so \
     vendor/realme/even/proprietary/vendor/lib/libmfllcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmfllcore.so \
     vendor/realme/even/proprietary/vendor/lib/libmml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmml.so \
     vendor/realme/even/proprietary/vendor/lib/libmmprofile.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmprofile.so \
@@ -1095,7 +1095,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/lib64/libmtkmipc-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkmipc-ril.so \
     vendor/realme/even/proprietary/vendor/lib64/libmtknetcap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtknetcap.so \
     vendor/realme/even/proprietary/vendor/lib64/libmtknetutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtknetutils.so \
-    vendor/realme/even/proprietary/vendor/lib64/libmtkperf_client_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkperf_client_vendor.so \
     vendor/realme/even/proprietary/vendor/lib64/libmtkproperty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkproperty.so \
     vendor/realme/even/proprietary/vendor/lib64/libmtkrillog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkrillog.so \
     vendor/realme/even/proprietary/vendor/lib64/libmtkrilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkrilutils.so \
