@@ -1694,8 +1694,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc \
     vendor/realme/even/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc \
     vendor/realme/even/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc \
-    vendor/realme/even/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc \
-    vendor/realme/even/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc \
     vendor/realme/even/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
     vendor/realme/even/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
     vendor/realme/even/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
@@ -1870,7 +1868,6 @@ PRODUCT_PACKAGES += \
     libmtkhardware_legacy \
     libmtklimiter_vendor \
     libmtknetutils \
-    libmtkperf_client_vendor \
     libmtkproperty \
     libmtkrillog \
     libmtkshifter_vendor \
@@ -1922,6 +1919,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.netdagent@1.0 \
     vendor.mediatek.hardware.nvram@1.0 \
     vendor.mediatek.hardware.nvram@1.1 \
+    vendor.mediatek.hardware.power@1.1 \
+    vendor.mediatek.hardware.power@2.0 \
     vendor.mediatek.hardware.pq@2.0 \
     vendor.mediatek.hardware.pq@2.1 \
     vendor.mediatek.hardware.pq@2.10 \
@@ -2017,7 +2016,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.bgservice@1.1-impl \
     vendor.mediatek.hardware.camera.isphal@1.0-impl \
     vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
-    vendor.mediatek.hardware.mtkpower@1.2-impl \
     imx386_mipi_raw_IdxMgr \
     imx386_mipi_raw_tuning \
     imx398_mipi_raw_IdxMgr \
@@ -2211,10 +2209,6 @@ PRODUCT_PACKAGES += \
     liboplus.aishutter \
     liboplus_platform_hwi_vendor \
     liboppo_aisd \
-    libperfctl_vendor \
-    libpower_timer \
-    libpowerhal \
-    libpowerhalwrap_vendor \
     libratconfig \
     libremosaic_wrapper_vendor \
     libremosaiclib_vendor \
@@ -2270,8 +2264,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mmagent@1.1 \
     vendor.mediatek.hardware.mtkradioex@2.0 \
     vendor.mediatek.hardware.mtkradioex@3.0 \
-    vendor.mediatek.hardware.power@1.1 \
-    vendor.mediatek.hardware.power@2.0 \
     vendor.mediatek.hardware.videotelephony@1.0_vendor \
     vendor.oplus.hardware.radio-V1-ndk_platform_vendor \
     libneuron_graph_delegate.mtk \
@@ -2362,7 +2354,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.keymaster_attestation@1.1-service \
     vendor.mediatek.hardware.mmagent@1.1-service \
     vendor.mediatek.hardware.mms@1.6-service \
-    vendor.mediatek.hardware.mtkpower@1.0-service \
     vendor.mediatek.hardware.nvram@1.1-service \
     vendor.mediatek.hardware.pq@2.2-service \
     vtservice_hidl \
