@@ -1944,8 +1944,6 @@ PRODUCT_PACKAGES += \
     libMtkOmxApeDec \
     libMtkOmxGsmDec \
     libMtkOmxMp3Dec \
-    libMtkOmxVenc \
-    libMtkOmxWmaDec \
     libMtkSpeechEnh \
     lib_iir \
     lib_speech_enh \
