@@ -3819,7 +3819,7 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		: {
+		android_arm: {
 			srcs: ["proprietary/vendor/lib/libMtkOmxVenc.so"],
 		},
 	},
@@ -3836,7 +3836,7 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		: {
+		android_arm: {
 			srcs: ["proprietary/vendor/lib/libMtkOmxWmaDec.so"],
 		},
 	},
