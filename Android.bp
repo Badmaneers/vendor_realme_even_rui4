@@ -3011,6 +3011,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libvibrator",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libvibrator.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libvibrator.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libvpu5",
 	owner: "realme",
 	strip: {
@@ -10282,6 +10302,15 @@ prebuilt_etc_xml {
 	soc_specific: true,
 }
 
+prebuilt_etc_xml {
+	name: "vibrator-mtk-default.xml",
+	owner: "realme",
+	src: "proprietary/vendor/etc/vintf/manifest/vibrator-mtk-default.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
 prebuilt_etc {
 	name: "gauge_authenticate",
 	owner: "realme",
@@ -10692,6 +10721,24 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "android.hardware.vibrator-service.mediatek",
+	owner: "realme",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/hw/android.hardware.vibrator-service.mediatek"],
 		},
 	},
 	compile_multilib: "64",
