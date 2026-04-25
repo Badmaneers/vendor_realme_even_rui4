@@ -2300,6 +2300,8 @@ PRODUCT_PACKAGES += \
     fingerprint.goodix_G6.default \
     fingerprint.goodix_G7.default \
     fingerprint.silead.default \
+    libRbsFlow \
+    libRbsFlow_cap \
     libarcsoft_dualcam_wt_calibration \
     libarcsoft_dualcam_wt_verification \
     libcalibverifyW_T \
