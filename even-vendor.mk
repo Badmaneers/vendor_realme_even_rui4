@@ -1876,6 +1876,7 @@ PRODUCT_PACKAGES += \
     libmtksysutils \
     libneuroeara \
     libneuropilot_hal_utils \
+    libnir_neon_driver \
     libnir_neon_driver_ndk.mtk.vndk \
     libnvram \
     libnvram_sec \
