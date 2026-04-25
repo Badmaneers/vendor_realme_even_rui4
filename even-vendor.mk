@@ -1800,6 +1800,7 @@ PRODUCT_PACKAGES += \
     libapusys_edma \
     libarmnn \
     libarmnn_ndk.mtk.vndk \
+    libaudio_engineer_test \
     libbluetooth_audio_session_mediatek \
     libbluetooth_mtk \
     libbluetooth_mtk_pure \
@@ -2126,6 +2127,7 @@ PRODUCT_PACKAGES += \
     libheichal \
     libhwm-oplus \
     libicd_decoder \
+    libifcutils_mtk \
     libimageio \
     libimageio_plat_drv \
     libimageio_plat_pipe \
@@ -2204,6 +2206,7 @@ PRODUCT_PACKAGES += \
     libmtkmipc-ril \
     libmtknetcap \
     libmtkrilutils \
+    libmtktinyxml \
     libmtkutils \
     libneuron_adapter \
     libneuron_platform \
