@@ -1663,7 +1663,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/realme/even/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/realme/even/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
-    vendor/realme/even/proprietary/vendor/etc/init/init.bip.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bip.rc \
     vendor/realme/even/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/realme/even/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
     vendor/realme/even/proprietary/vendor/etc/init/init.connfem.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.connfem.rc \
@@ -1762,6 +1761,7 @@ PRODUCT_PACKAGES += \
     libMEOW_gift \
     libMEOW_qt \
     libMEOW_trace \
+    android.hardware.bluetooth@1.1-impl-mediatek \
     android.hardware.graphics.allocator@4.0-impl-mediatek \
     android.hardware.graphics.mapper@4.0-impl-mediatek \
     android.hardware.thermal@2.0-impl \
@@ -1772,7 +1772,6 @@ PRODUCT_PACKAGES += \
     kmsetkey.trustonic \
     libMcGatekeeper \
     libSoftGatekeeper \
-    vendor.mediatek.hardware.bluetooth.audio@2.1-impl \
     vendor.mediatek.hardware.bluetooth.audio@2.2-impl \
     vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
     vendor.mediatek.hardware.mms@1.6-impl \
@@ -1804,6 +1803,9 @@ PRODUCT_PACKAGES += \
     libarmnn_ndk.mtk.vndk \
     libaudio_engineer_test \
     libbluetooth_audio_session_mediatek \
+    libbluetooth_mtk \
+    libbluetooth_mtk_pure \
+    libbt-vendor \
     libbwc \
     libcam.halsensor \
     libcam.utils.sensorprovider \
@@ -1829,6 +1831,7 @@ PRODUCT_PACKAGES += \
     libcrypto-ss \
     libcurl-ss \
     libcustom_nvram \
+    libcvface_api \
     libcvsd_mtk \
     libdecrypt \
     libdpframework \
@@ -1873,6 +1876,7 @@ PRODUCT_PACKAGES += \
     libmtkares \
     libmtkcam.featurepipe.depthmap \
     libmtkcam_dpe \
+    libmtkcam_exif \
     libmtkcam_imem \
     libmtkcutils \
     libmtkhardware_legacy \
@@ -1890,6 +1894,7 @@ PRODUCT_PACKAGES += \
     libnvram \
     libnvram_sec \
     libnxp_extamp_intf \
+    libolc_vnd \
     liboplus_audio_config \
     liboppo_arcSoftBokehEngine_new \
     libpq_cust_base \
@@ -1915,6 +1920,8 @@ PRODUCT_PACKAGES += \
     libvpu5 \
     libwo \
     vendor.mediatek.hardware.apmonitor@2.0 \
+    vendor.mediatek.hardware.bluetooth.audio@2.1 \
+    vendor.mediatek.hardware.bluetooth.audio@2.2 \
     vendor.mediatek.hardware.keymaster_attestation@1.0 \
     vendor.mediatek.hardware.keymaster_attestation@1.1 \
     vendor.mediatek.hardware.mdmonitor@1.0 \
@@ -1946,6 +1953,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.7 \
     vendor.mediatek.hardware.pq@2.8 \
     vendor.mediatek.hardware.pq@2.9 \
+    vendor.oplus.hardware.olc@2.0 \
     libHEVCdec_sa.ca7.android \
     libMtkOmxAdpcmDec \
     libMtkOmxAlacDec \
@@ -1977,7 +1985,6 @@ PRODUCT_PACKAGES += \
     libh264enc_sa.ca7 \
     libmp4enc_sa.ca7 \
     libmp4enc_xa.ca7 \
-    libolc_vnd \
     librcs_interface \
     librcs_volte_core \
     librt_extamp_intf \
@@ -2016,7 +2023,6 @@ PRODUCT_PACKAGES += \
     evenc_shengtai_macro_ov02b10_tuning \
     evenc_shinetech_depth_gc02m1b_IdxMgr \
     evenc_shinetech_depth_gc02m1b_tuning \
-    android.hardware.bluetooth@1.1-impl-mediatek \
     android.hardware.camera.provider@2.6-impl-mediatek \
     android.hardware.gnss-impl-mediatek \
     android.hardware.gnss@2.1-impl-mediatek \
@@ -2076,12 +2082,6 @@ PRODUCT_PACKAGES += \
     libasn1c_core \
     libasn1c_mapi \
     libasn1c_mdmi \
-    libbluetooth_hw_test \
-    libbluetooth_mtk \
-    libbluetooth_mtk_pure \
-    libbluetooth_relayer \
-    libbluetoothem_mtk \
-    libbt-vendor \
     libcam.chdr \
     libcam.feature_utils \
     libcam.hal3a.cctsvr \
@@ -2172,7 +2172,6 @@ PRODUCT_PACKAGES += \
     libmtkcam_device3_utils \
     libmtkcam_devicesessionpolicy \
     libmtkcam_diputils \
-    libmtkcam_exif \
     libmtkcam_fdvt \
     libmtkcam_featurepolicy \
     libmtkcam_featureutils \
@@ -2211,6 +2210,7 @@ PRODUCT_PACKAGES += \
     libmtkcam_sysutils \
     libmtkcam_tuning_utils \
     libmtkcam_ulog \
+    libmtkcam_vsync_util \
     libmtkconfig \
     libmtkconfigutils \
     libmtkisp_metadata \
@@ -2256,8 +2256,6 @@ PRODUCT_PACKAGES += \
     miami_sp2507_IdxMgr \
     miami_sp2507_tuning \
     libmtkcam_streaminfo_plugin-p1stt \
-    vendor.mediatek.hardware.bluetooth.audio@2.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.2 \
     vendor.mediatek.hardware.camera.atms@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.1 \
@@ -2349,8 +2347,6 @@ PRODUCT_PACKAGES += \
     manifest_oplus_fingerprint.xml \
     ormsHalService-default.xml \
     AgentTest \
-    autobt \
-    bip \
     ccci_mdinit \
     ccci_rpcd \
     charon \
