@@ -711,6 +711,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "lib_bsscore",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/lib_bsscore.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/lib_bsscore.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libaal_cust",
 	owner: "realme",
 	strip: {
@@ -1022,6 +1042,26 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libbluetooth_audio_session_mediatek.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libbwc",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libbwc.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libbwc.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -1802,6 +1842,26 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libhevce_sb.ca7.android.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libhwconfigurationutil",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libhwconfigurationutil.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libhwconfigurationutil.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -4213,23 +4273,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libblisrc32_vendor.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libbwc",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libbwc.so"],
 		},
 	},
 	compile_multilib: "32",

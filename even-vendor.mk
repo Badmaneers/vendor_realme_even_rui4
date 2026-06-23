@@ -1787,6 +1787,7 @@ PRODUCT_PACKAGES += \
     libNoFpsActor \
     libOpenCL \
     libTEECommon \
+    lib_bsscore \
     libaal_cust \
     libaal_key \
     libaal_mtk \
@@ -1803,6 +1804,7 @@ PRODUCT_PACKAGES += \
     libarmnn_ndk.mtk.vndk \
     libaudio_engineer_test \
     libbluetooth_audio_session_mediatek \
+    libbwc \
     libcam.halsensor \
     libcam.utils.sensorprovider \
     libcapctrl \
@@ -1842,6 +1844,7 @@ PRODUCT_PACKAGES += \
     libgz_gp_client \
     libgz_uree \
     libhevce_sb.ca7.android \
+    libhwconfigurationutil \
     libhwm \
     libhydra \
     libion_mtk \
@@ -1966,7 +1969,6 @@ PRODUCT_PACKAGES += \
     libaurisysdemo \
     libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
-    libbwc \
     libfgauge_gm30 \
     libh264dec_customize \
     libh264dec_sa.ca7 \
