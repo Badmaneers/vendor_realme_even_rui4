@@ -2066,6 +2066,7 @@ PRODUCT_PACKAGES += \
     libSonyIMX386PdafLibraryWrapper \
     libSonyIMX519PdafLibrary \
     libSonyIMX519PdafLibraryWrapper \
+    libVDBlurless \
     libVDDualCameraBlurless \
     libVDDualCameraBlurless1 \
     libWaterMark \
@@ -2234,6 +2235,7 @@ PRODUCT_PACKAGES += \
     libstface_fd_api \
     libstorage_otp \
     libtrm \
+    libvdblurless \
     libvia-ril \
     libviamipc-ril \
     libwifi-hal-mtk \
