@@ -1794,6 +1794,7 @@ PRODUCT_PACKAGES += \
     libadpcmdec_mtk \
     libaedv \
     libakm \
+    libalsautils-v31 \
     libapmonitor_vendor \
     libappgamepq \
     libapu_mdw \
