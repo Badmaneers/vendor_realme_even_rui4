@@ -2304,8 +2304,8 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.orms.ormsHalService@1.0 \
     vendor.oplus.hardware.orms@1.0 \
     vendor.oplus.hardware.ormsHalService-V1-ndk_platform \
-    vendor.oplus.hardware.osense.client-V1-ndk_platform \
-    vendor.oplus.hardware.performance-V1-ndk_platform \
+    vendor.oplus.hardware.osense.client-V1-ndk_platform_odm \
+    vendor.oplus.hardware.performance-V1-ndk_platform_vendor \
     vendor.oplus.hardware.performance@1.0_odm \
     vendor.oplus.hardware.radio-V1-ndk_platform \
     anc.capacitive.hal \

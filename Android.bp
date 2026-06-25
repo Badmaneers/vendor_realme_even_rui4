@@ -10093,7 +10093,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.osense.client-V1-ndk_platform",
+	name: "vendor.oplus.hardware.osense.client-V1-ndk_platform_odm",
+	stem: "vendor.oplus.hardware.osense.client-V1-ndk_platform",
 	owner: "realme",
 	strip: {
 		none: true,
@@ -10113,7 +10114,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.performance-V1-ndk_platform",
+	name: "vendor.oplus.hardware.performance-V1-ndk_platform_vendor",
+	stem: "vendor.oplus.hardware.performance-V1-ndk_platform",
 	owner: "realme",
 	strip: {
 		none: true,
