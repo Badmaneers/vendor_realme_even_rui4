@@ -10093,6 +10093,46 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "vendor.oplus.hardware.osense.client-V1-ndk_platform",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/odm/lib/vendor.oplus.hardware.osense.client-V1-ndk_platform.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.oplus.hardware.performance-V1-ndk_platform",
+	owner: "realme",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/odm/lib/vendor.oplus.hardware.performance-V1-ndk_platform.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "vendor.oplus.hardware.performance@1.0_odm",
 	stem: "vendor.oplus.hardware.performance@1.0",
 	owner: "realme",
