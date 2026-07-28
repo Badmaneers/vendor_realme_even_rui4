@@ -1765,7 +1765,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@4.0-impl-mediatek \
     android.hardware.thermal@2.0-impl \
     audio.primary.mt6768 \
-    audio.r_submix.mt6768 \
     audio.usb.default \
     gps.default \
     kmsetkey.trustonic \
