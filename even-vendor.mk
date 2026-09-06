@@ -2149,7 +2149,7 @@ PRODUCT_PACKAGES += \
     libmipc \
     libmmagent \
     libmmprofile \
-    libmnl \
+    libmnl-mtk \
     libmtk-fusion-ril-prop-vsim \
     libmtk-ril \
     libmtkcam.eventcallback \
