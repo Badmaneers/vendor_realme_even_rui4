@@ -10670,15 +10670,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "gnss-mtk.xml",
-	owner: "realme",
-	src: "proprietary/vendor/etc/vintf/manifest/gnss-mtk.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "gnss@2.1-service-mtk.xml",
 	owner: "realme",
 	src: "proprietary/vendor/etc/vintf/manifest/gnss@2.1-service-mtk.xml",
