@@ -1647,10 +1647,12 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml \
     vendor/realme/even/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
     vendor/realme/even/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Vodafone.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Vodafone.xml \
+    vendor/realme/even/proprietary/vendor/etc/gralloc/gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gpu.xml \
     vendor/realme/even/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc \
     vendor/realme/even/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/realme/even/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
-    vendor/realme/even/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
+    vendor/realme/even/proprietary/vendor/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc \
+    vendor/realme/even/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.3-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.3-service.rc \
     vendor/realme/even/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service.trustonic.rc \
     vendor/realme/even/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek.rc \
     vendor/realme/even/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc \
@@ -1662,6 +1664,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/etc/init/dmc_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dmc_core.rc \
     vendor/realme/even/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/realme/even/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
+    vendor/realme/even/proprietary/vendor/etc/init/gpuserv-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gpuserv-default.rc \
     vendor/realme/even/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
     vendor/realme/even/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/realme/even/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
@@ -1693,12 +1696,14 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/etc/init/trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trustonic.rc \
     vendor/realme/even/proprietary/vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc \
     vendor/realme/even/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc \
-    vendor/realme/even/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc \
+    vendor/realme/even/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms-service.rc \
     vendor/realme/even/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
-    vendor/realme/even/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
+    vendor/realme/even/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
     vendor/realme/even/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/realme/even/proprietary/vendor/etc/init/vpud.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vpud.rc \
+    vendor/realme/even/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
     vendor/realme/even/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
+    vendor/realme/even/proprietary/vendor/etc/pq_flag.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pq_flag.xml \
     vendor/realme/even/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
     vendor/realme/even/proprietary/vendor/etc/smsdbvisitor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/smsdbvisitor.xml \
     vendor/realme/even/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
@@ -1753,6 +1758,9 @@ PRODUCT_PACKAGES += \
     libem_support_jni \
     vendor.oplus.hardware.cameraextension@1.0 \
     arm.graphics-V1-ndk_platform \
+    android.hardware.sensors-V2-ndk \
+    arm.graphics-V5-ndk \
+    arm.mali.platform-V2-ndk \
     libGLES_mali \
     libGLES_meow \
     libMEOW_data \
@@ -1760,8 +1768,6 @@ PRODUCT_PACKAGES += \
     libMEOW_qt \
     libMEOW_trace \
     android.hardware.bluetooth@1.1-impl-mediatek \
-    android.hardware.graphics.allocator@4.0-impl-mediatek \
-    android.hardware.graphics.mapper@4.0-impl-mediatek \
     android.hardware.thermal@2.0-impl \
     audio.primary.mt6768 \
     audio.usb.default \
@@ -1771,10 +1777,14 @@ PRODUCT_PACKAGES += \
     libSoftGatekeeper \
     vendor.mediatek.hardware.bluetooth.audio@2.2-impl \
     vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
-    vendor.mediatek.hardware.mms@1.6-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
-    vendor.mediatek.hardware.pq@2.15-impl \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
+    android.hardware.graphics.allocator-V2-mediatek \
+    mapper.mediatek \
+    vendor.mediatek.hardware.pq_aidl-impl \
+    vulkan.mali \
+    vulkan.mt6768_lib \
+    vulkan.mt6768_lib64 \
     libDefaultFpsActor \
     libFrameRecord \
     libJpgEncPipe \
@@ -1784,6 +1794,7 @@ PRODUCT_PACKAGES += \
     libOpenCL \
     libTEECommon \
     lib_bsscore \
+    libaal_sec \
     libaal_cust \
     libaal_key \
     libaal_mtk \
@@ -1796,6 +1807,9 @@ PRODUCT_PACKAGES += \
     libapu_mdw \
     libapusys \
     libapusys_edma \
+    libarm_egl_properties_sysprop \
+    libarm_gralloc_properties_sysprop \
+    libarm_mali_config_sysprops \
     libarmnn \
     libarmnn_ndk.mtk.vndk \
     libaudio_engineer_test \
@@ -1813,6 +1827,7 @@ PRODUCT_PACKAGES += \
     libcharon-ss \
     libcmdl \
     libcmdl_ndk.mtk.vndk \
+    libcodec2_fsr \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
     libcodec2_mtk_venc \
@@ -1822,6 +1837,8 @@ PRODUCT_PACKAGES += \
     libcodec2_soft_mtk_mp3dec \
     libcodec2_soft_mtk_msadpcmdec \
     libcodec2_soft_mtk_wmadec \
+    libcodec2_vpp_fa_plugin \
+    libcodec2_vpp_mi_plugin \
     libcodec2_vpp_qt_plugin \
     libcodec2_vpp_rs_plugin \
     libconnfem \
@@ -1869,6 +1886,8 @@ PRODUCT_PACKAGES += \
     libmsbc_mtk \
     libmsnr \
     libmtcloader \
+    libmtkgpuserv \
+    libmtkgpuservsdk_vendor \
     libmtk_drvb \
     libmtkares \
     libmtkcam.featurepipe.depthmap \
@@ -1894,6 +1913,12 @@ PRODUCT_PACKAGES += \
     libolc_vnd \
     liboplus_audio_config \
     liboppo_arcSoftBokehEngine_new \
+    libpq_sec \
+    libpqhdrmetaparser \
+    libpqsharememory \
+    libpqtuning \
+    libpqxmlparser \
+    libsdrparser \
     libpq_cust_base \
     libpq_prot \
     libpqframework \
@@ -1920,6 +1945,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.keymaster_attestation@1.0 \
     vendor.mediatek.hardware.keymaster_attestation@1.1 \
     vendor.mediatek.hardware.mdmonitor@1.0 \
+    vendor.mediatek.hardware.mms-V1-ndk \
     vendor.mediatek.hardware.mms@1.0 \
     vendor.mediatek.hardware.mms@1.1 \
     vendor.mediatek.hardware.mms@1.2 \
@@ -1932,6 +1958,9 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.nvram@1.1 \
     vendor.mediatek.hardware.power@1.1 \
     vendor.mediatek.hardware.power@2.0 \
+    vendor.mediatek.hardware.pq_aidl-V2-ndk \
+    vendor.mediatek.hardware.pq_aidl-V4-ndk \
+    vendor.mediatek.hardware.pq_aidl-V7-ndk \
     vendor.mediatek.hardware.pq@2.0 \
     vendor.mediatek.hardware.pq@2.1 \
     vendor.mediatek.hardware.pq@2.10 \
@@ -2225,6 +2254,7 @@ PRODUCT_PACKAGES += \
     libremosaic_wrapper_vendor \
     libremosaiclib_vendor \
     librilfusion \
+    libsilkybrightnesscore \
     libsensor_custom \
     libstereoinfoaccessor_vsdof \
     libstface_fd_api \
@@ -2263,6 +2293,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.postproc@1.0 \
     vendor.mediatek.hardware.camera.security@1.0 \
     vendor.mediatek.hardware.clientapi@1.0 \
+    android.hardware.graphics.composer3-V3-ndk \
+    vendor.mediatek.hardware.composer_ext-V1-ndk \
     vendor.mediatek.hardware.composer_ext@1.0 \
     vendor.mediatek.hardware.dmc@1.0 \
     vendor.mediatek.hardware.dmc@1.1 \
@@ -2271,8 +2303,10 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.engineermode@1.1 \
     vendor.mediatek.hardware.engineermode@1.2 \
     vendor.mediatek.hardware.engineermode@1.3 \
+    vendor.mediatek.hardware.gpuserv-V2-ndk \
     vendor.mediatek.hardware.lbs@1.0 \
     vendor.mediatek.hardware.log@1.0 \
+    vendor.mediatek.hardware.mmagent-V1-ndk \
     vendor.mediatek.hardware.mmagent@1.0 \
     vendor.mediatek.hardware.mmagent@1.1 \
     vendor.mediatek.hardware.mtkradioex@2.0 \
@@ -2281,6 +2315,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.radio-V1-ndk_platform_vendor \
     libneuron_graph_delegate.mtk \
     vendor.oplus.hardware.camera.slogan@1.0 \
+    vendor.oplus.hardware.displaypanelfeature-V1-ndk \
     vendor.oplus.hardware.displaypanelfeature@1.0 \
     vendor.mediatek.hardware.apuware.utils@2.0 \
     libmxmafa \
@@ -2337,6 +2372,9 @@ PRODUCT_PACKAGES += \
     gnss@2.1-service-mtk.xml \
     lbs_hidl_service@1.0.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
+    manifest_allocator.xml \
+    manifest_hwcomposer.xml \
+    mapper.mediatek.xml \
     manifest_media_c2_V1_1_default.xml \
     gauge_authenticate \
     manifest_oplusSensor.xml \
@@ -2355,7 +2393,8 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1-service-mediatek \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.gnss-service.mediatek \
-    android.hardware.graphics.allocator@4.0-service-mediatek \
+    android.hardware.graphics.allocator-V2-service-mediatek \
+    android.hardware.graphics.composer@3.3-service \
     android.hardware.keymaster@4.1-service.trustonic \
     android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.media.c2@1.2-mediatek \
@@ -2369,9 +2408,10 @@ PRODUCT_PACKAGES += \
     tetheroffloadservice \
     vendor.mediatek.hardware.keymaster_attestation@1.1-service \
     vendor.mediatek.hardware.mmagent@1.1-service \
-    vendor.mediatek.hardware.mms@1.6-service \
+    vendor.mediatek.hardware.gpuserv-service \
+    vendor.mediatek.hardware.mms-service \
     vendor.mediatek.hardware.nvram@1.1-service \
-    vendor.mediatek.hardware.pq@2.2-service \
+    vendor.mediatek.hardware.pq_aidl-service \
     vtservice_hidl \
     ipsec_mon \
     lbs_hidl_service \
