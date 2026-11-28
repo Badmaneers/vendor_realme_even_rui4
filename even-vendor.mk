@@ -1654,7 +1654,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/even/proprietary/vendor/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc \
     vendor/realme/even/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.3-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.3-service.rc \
     vendor/realme/even/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service.trustonic.rc \
-    vendor/realme/even/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek.rc \
+    vendor/realme/even/proprietary/vendor/etc/init/android.hardware.media.c2-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2-mediatek.rc \
+    vendor/realme/even/proprietary/vendor/etc/init/v3avpud.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/v3avpud.rc \
     vendor/realme/even/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc \
     vendor/realme/even/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/realme/even/proprietary/vendor/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc \
@@ -1937,6 +1938,35 @@ PRODUCT_PACKAGES += \
     libtranslator_utils \
     libudf \
     libvcodec_oal \
+    libvpudv3a_vcodec \
+    libvcodec_utility_v3a \
+    libvcodecdrv_v3a \
+    libabfadp \
+    libcamalgo.abf \
+    libmtkcam.debugwrapper \
+    libgwsdv2-ril \
+    vendor.mediatek.hardware.mtkradioex.assist-V2-ndk \
+    vendor.mediatek.hardware.mtkradioex.atci-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.cap-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.data-V3-ndk \
+    vendor.mediatek.hardware.mtkradioex.dch-V2-ndk \
+    vendor.mediatek.hardware.mtkradioex.em-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.ims-V2-ndk \
+    vendor.mediatek.hardware.mtkradioex.messaging-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.modem-V3-ndk \
+    vendor.mediatek.hardware.mtkradioex.mwi-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.network-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.rcs-V2-ndk \
+    vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.se-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.sim-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.sim-V2-ndk \
+    vendor.mediatek.hardware.mtkradioex.smartratswitch-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.voice-V1-ndk \
+    vendor.oplus.hardware.appradioaidl-V1-ndk \
+    vendor.oplus.hardware.radio-V2-ndk \
+    vendor.oplus.hardware.radio.satellite.rsmc-V1-ndk \
+    vendor.oplus.hardware.radio.satellite.zb-V2-ndk \
     libvcodecdrv_header_stub \
     libverno \
     libvpu5 \
@@ -2375,7 +2405,8 @@ PRODUCT_PACKAGES += \
     manifest_allocator.xml \
     manifest_hwcomposer.xml \
     mapper.mediatek.xml \
-    manifest_media_c2_V1_1_default.xml \
+    manifest_media_c2_default.xml \
+    manifest_radio_aidl.xml \
     gauge_authenticate \
     manifest_oplusSensor.xml \
     manifest_oplus_charger.xml \
@@ -2396,8 +2427,8 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator-V2-service-mediatek \
     android.hardware.graphics.composer@3.3-service \
     android.hardware.keymaster@4.1-service.trustonic \
-    android.hardware.media.c2@1.2-mediatek-64b \
-    android.hardware.media.c2@1.2-mediatek \
+    android.hardware.media.c2-mediatek-64b \
+    android.hardware.media.c2-mediatek \
     android.hardware.neuralnetworks@1.3-service-mtk-neuron \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.sensors@2.0-service.multihal-mediatek \
@@ -2441,6 +2472,7 @@ PRODUCT_PACKAGES += \
     volte_rcs_ua \
     volte_stack \
     volte_ua \
+    v3avpud \
     vpud \
     wfca \
     wmt_launcher \
